@@ -2,14 +2,13 @@
   <div class="app">
     <h1 class="h1">ISIMINK MANE</h1>
     <p>Spausk "START" isimink laukelius ir juos atspek</p>
-  </div>
 
-  <Board />
+    <Board />
+  </div>
 </template>
 
 <script>
 import Board from "./components/Board";
-
 export default {
   name: "App",
   components: {
@@ -20,8 +19,11 @@ export default {
 
 <style scoped>
 .app {
-  margin-top: 40px;
-  text-align: center;
   font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+.logo {
+  width: 100px;
 }
 </style>
