@@ -1,5 +1,5 @@
 <template>
-  <div class="item"></div>
+  <span class="item"></span>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {};
   width: 50px;
   height: 50px;
   background: #ccc;
-  float: left;
+  display: inline-block;
   margin: 5px;
   cursor: pointer;
 }
