@@ -2,6 +2,10 @@
   <div class="wrapper">
     <BoardItem v-for="i in 25" :key="'item-' + i" />
   </div>
+
+  <p class="difficult">Lygis: <strong>3</strong></p>
+
+  <button>START</button>
 </template>
 
 <script>
