@@ -1,27 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
-  <h1>TESTINAM</h1>
+  <div class="app">
+    <h1 class="h1">ISIMINK MANE</h1>
+    <p>Spausk "START" isimink laukelius ir juos atspek</p>
+  </div>
+
+  <Board />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Board from "./components/Board";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Board,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+.app {
+  margin-top: 40px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: "Quicksand", sans-serif;
 }
 </style>
