@@ -2,9 +2,7 @@
   <span class="item"></span>
 </template>
 
-<script>
-export default {};
-</script>
+<script></script>
 
 <style scoped>
 .item {
@@ -12,8 +10,8 @@ export default {};
   width: 50px;
   height: 50px;
   background: #ccc;
-  display: inline-block;
   margin: 5px;
+  display: inline-block;
   cursor: pointer;
 }
 </style>
