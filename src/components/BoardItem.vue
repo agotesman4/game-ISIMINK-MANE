@@ -25,9 +25,13 @@ export default {
       if (
         (props.field.value === FIELD.FILLED &&
           props.gameStatus === GAME_STATUS.PREVIEW) ||
-        props.field.clicked
+        (props.field.clicked && props.field.value === FIELD.FILLED)
       ) {
-        classes += "active";
+        classes += " active";
+      }
+
+      if (props.field.clicked && props.field.value === FIELD.EMPTY) {
+        classes += " error";
       }
 
       return classes;
@@ -62,7 +66,12 @@ export default {
 }
 
 .item.active {
-  background: #42b983cc;
+  background: #24a96dcc;
+  transform: rotateX(180deg);
+}
+
+.item.error {
+  background-color: #cb0e0ed6;
   transform: rotateX(180deg);
 }
 </style>

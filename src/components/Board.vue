@@ -13,6 +13,8 @@
     <p class="difficult">
       Lygis: <strong>{{ difficult }}</strong>
     </p>
+    <p class="win" v-if="isWin">Teisingai!</p>
+    <p class="fail" v-if="isFail">Neteisingai! Bandyk dar karta.</p>
 
     <button class="btn" @click="start" :disabled="!canStartGame">START</button>
   </div>
@@ -44,7 +46,12 @@ export default {
       number,
       gameStatus
     );
-    const { selectField } = useGameProcess(fields);
+    const { selectField, isWin, isFail } = useGameProcess(
+      fields,
+      gameStatus,
+      difficult,
+      start
+    );
 
     return {
       number,
@@ -55,6 +62,8 @@ export default {
       gameStatus,
       canStartGame,
       selectField,
+      isWin,
+      isFail,
     };
   },
 };
@@ -71,8 +80,12 @@ export default {
   margin: 0 auto;
 }
 
+.difficult {
+  margin-top: 30px;
+}
+
 .btn {
-  background: #42b983cc;
+  background: #24a96dcc;
   color: white;
   border: none;
   border-radius: 2px;
@@ -83,10 +96,18 @@ export default {
 }
 
 button:hover {
-  background: #42b983;
+  background: #24a96d;
 }
 
 button:disabled {
   opacity: 0.5;
+}
+
+.win {
+  color: #24a96d;
+}
+
+.fail {
+  color: #cb0e0ed6;
 }
 </style>
