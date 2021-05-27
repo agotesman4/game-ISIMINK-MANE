@@ -78,6 +78,7 @@ export default {
   width: 300px;
   background: #eee;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .difficult {
