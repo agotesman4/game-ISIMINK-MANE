@@ -1,7 +1,7 @@
 <template>
   <div class="app">
-    <h1 class="h1">ISIMINK MANE</h1>
-    <p>Spausk "START" isimink laukelius ir juos atspek</p>
+    <h1 class="h1">ĮSIMINK MANE</h1>
+    <p>Spausk "START" įsimink laukelius ir juos atspėk</p>
 
     <Board />
   </div>
@@ -22,8 +22,5 @@ export default {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   margin-top: 40px;
-}
-.logo {
-  width: 100px;
 }
 </style>
